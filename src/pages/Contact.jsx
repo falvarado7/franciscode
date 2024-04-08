@@ -36,7 +36,7 @@ function Contact() {
                 <strong>
                   <br />
                   I am currently looking for full time work<br />
-                  in either an office seeting in the Houston, TX area or in a remote setting.
+                  in either an office setting in the Houston, TX area or in a remote setting.
                   <br />
                   <br />
                   Additionally, if you'd like to collaborate on a project,{" "}
