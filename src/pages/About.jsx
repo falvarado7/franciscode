@@ -62,11 +62,8 @@ function About() {
         
       </Typography>
       <Typography variant="h5" style={styleSubtitle}>
-      As a dedicated coding enthusiast with a strong passion for innovation and problem-solving, 
-      I'm thrilled at the opportunity to collaborate with you on your upcoming project. 
-      With a solid background in front-end and back-end develoment and a commitment to delivering high-quality results, 
-      I'm eager to contribute my skills and expertise to help bring your ideas to life. 
-      Let's work together to create something truly remarkable!
+      I have a solid background in front-end and back-end development 
+      and a commitment to delivering quality results. Let's do something truly remarkable together!
         </Typography>
         <Typography variant="h5" style={styleSubtitle}>
         Or we can explore intriguing topics like space exploration and the mysteries of the universe
