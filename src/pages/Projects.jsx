@@ -9,8 +9,11 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import { ThemeProvider, createTheme } from "@mui/material/styles"
+import Monarch from "../assets/Monarch.PNG"
+import CarRental from "../assets/car-rental-project-pic.PNG"
 import Movies from "../assets/WeLoveMovies.PNG"
 import Restaurant from "../assets/Restaurant-reservation.PNG"
+import Recipe from "../assets/Recipe-App.PNG"
 import GrubDash from "../assets/GrubDash.PNG"
 
 const theme = createTheme({
@@ -22,13 +25,14 @@ const theme = createTheme({
 const styleHeader = {
   color: "white",
   textAlign: "center",
+  marginTop: "2rem"
 };
 
 function Projects() {
   const styleCardContainer = {
     maxWidth: 345,
-    height: 410,
-    margin: "5rem auto",
+    height: "auto",
+    margin: "3rem auto",
   }
 
   return (
@@ -38,8 +42,97 @@ function Projects() {
           Projects
         </Typography>
       </ThemeProvider>
-      <Grid container justifyContent="center" alignItems="center">
-        <Grid item xs={12} sm={8} md={6} lg={4}>
+      <Grid container justifyContent="center">
+
+      <Grid item xs={12} sm={6} md={4}>
+          <Card style={styleCardContainer}>
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                alt="Investment Trading Platform"
+                height="190"
+                image={Monarch}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5">
+                  Monarch
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                Participated in a hackathon as part of a multidisciplinary team, consisting of 5 engineers 
+                (2 backend, 3 frontend), a UI/UX designer, and a data analyst. Within one week, we developed 
+                an investment trading platform that allows users to invest their money with no experience, 
+                aided by our integrated AI. I was responsible for developing all pages post-signup/sign-in, 
+                excluding the 'My Account' page. Additionally, I created interactive graphs using D3.js, 
+                integrating real-time data provided by our data analyst through an API. This project was 
+                built using React and Tailwind CSS.
+                </Typography>
+                <br />
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                href="https://github.com/aabusaif8/Hackathon--Team2-V2"
+                target="blank"
+              >
+                GitHub Repo
+              </Button>
+              <Button
+                size="small"
+                color="primary"
+                href="https://hackathon-team2-v2-1.onrender.com/"
+                target="blank"
+              >
+                Live Link
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
+
+        <Grid item xs={12} sm={6} md={4}>
+          <Card style={styleCardContainer}>
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                alt="We Love Movies project"
+                height="190"
+                image={CarRental}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5">
+                  Car Rental
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                Developed a fully frontend car rental website using React and CSS. 
+                The site is mobile responsive and allows users to search and book various 
+                vehicles for personal or business use. This project showcases my frontend 
+                development skills, focusing solely on frontend technologies with no backend integration. 
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                href="https://github.com/falvarado7/Car-Rental-Project"
+                target="blank"
+              >
+                GitHub Repo
+              </Button>
+              <Button
+                size="small"
+                color="primary"
+                href="https://car-rental-project-zeta.vercel.app/"
+                target="blank"
+              >
+                Live Link
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
+
+        <Grid item xs={12} sm={6} md={4}>
           <Card style={styleCardContainer}>
             <CardActionArea>
               <CardMedia
@@ -80,49 +173,7 @@ function Projects() {
           </Card>
         </Grid>
 
-        <Grid item xs={12} sm={8} md={6} lg={4}>
-          <Card style={styleCardContainer}>
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                alt="Restaurant Resrvation app"
-                height="190"
-                image={Restaurant}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5">
-                  Restaurant Reservation
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                This application was built for use by restaurant personnel to handle 
-                reservations when a customer calls, seat reservations when they arrive at the restaurant, 
-                and free up occupied tables when guests leave.
-                </Typography>
-                <br />
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button
-                size="small"
-                color="primary"
-                href="https://github.com/falvarado7/Restaurant-Reservation-Project"
-                target="blank"
-              >
-                GitHub Repo
-              </Button>
-              <Button
-                size="small"
-                color="primary"
-                href="https://restaurant-reservation-project-1.onrender.com"
-                target="blank"
-              >
-                Live Link
-              </Button>
-            </CardActions>
-          </Card>
-        </Grid>
-
-        <Grid item xs={12} sm={8} md={6} lg={4}>
+        <Grid item xs={12} sm={6} md={4} sx={{ mb: 6 }}>
           <Card style={styleCardContainer}>
             <CardActionArea>
               <CardMedia
@@ -136,7 +187,7 @@ function Projects() {
                   GrubDash
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                GrubDash is a fictional online food ordering and delivery platform. 
+                GrubDash is a fictional backend online food ordering and delivery platform. 
                 It leverages RESTful APIs, Middleware functions, and Route-handlers for seamless 
                 user experience. Custom validation functions ensure data integrity and user security.
                 </Typography>
@@ -164,6 +215,90 @@ function Projects() {
             </CardActions>
           </Card>
         </Grid>
+
+        <Grid item xs={12} sm={6} md={4} sx={{ mb: 6 }}>
+          <Card style={styleCardContainer}>
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                alt="Restaurant Resrvation app"
+                height="190"
+                image={Restaurant}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5">
+                  Restaurant Reservation
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                This application was built for use by restaurant personnel to handle 
+                reservations when a customer calls, seat reservations when they arrive at the restaurant, 
+                and free up occupied tables when guests leave. I built both Frontend and Backend implementing CRUD
+                practices, RESTful API's, React hooks, CSS
+                </Typography>
+                <br />
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                href="https://github.com/falvarado7/Restaurant-Reservation-Project"
+                target="blank"
+              >
+                GitHub Repo
+              </Button>
+              <Button
+                size="small"
+                color="primary"
+                href="https://restaurant-reservation-project-1.onrender.com"
+                target="blank"
+              >
+                Live Link
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
+
+        <Grid item xs={12} sm={6} md={4} sx={{ mb: 6 }}>
+          <Card style={styleCardContainer}>
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                alt="Restaurant Resrvation app"
+                height="190"
+                image={Recipe}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5">
+                  Recipe Application
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                This application was built for users to show, create, delete, and edit their personal food recipes
+                </Typography>
+                <br />
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                href="https://github.com/falvarado7/Recipe-App-Project"
+                target="blank"
+              >
+                GitHub Repo
+              </Button>
+              <Button
+                size="small"
+                color="primary"
+                href="https://recipe-app-project-5mmf.onrender.com/"
+                target="blank"
+              >
+                Live Link
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
+        
       </Grid>
     </Box>
   )

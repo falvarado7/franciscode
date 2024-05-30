@@ -21,32 +21,38 @@ function About() {
   const styleAvatar = {
     width: "180px",
     height: "180px",
-    margin: "8px"
+    marginBottom: "2rem",
   };
 
-  const styleTitle ={
-    color: "#fff"
-  }
+  const styleTitle = {
+    color: "#fff",
+    marginBottom: "1rem",
+    fontSize: "3rem",
+  };
 
- const styleSubtitle = {
-  color: "white",
-  marginBottom: "2rem",
-  marginLeft: "3rem",
-  marginRight: "3rem"
- }
- const styleTypeContainer ={
-   position: "absolute",
-   top: "50%",
-   left: "50%",
-   transform: "translate(-50%, -50%",
-   width: "100vw",
-   textAlign: "center",
-   zIndex: 1
- }
+  const styleSubtitle = {
+    color: "#FFD700",
+    marginBottom: "2rem",
+    marginLeft: "3rem",
+    marginRight: "3rem",
+  };
+
+  const styleContainer = {
+    minHeight: "70vh",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+    padding: "2rem",
+    paddingBottom: "4rem",
+    boxSizing: "border-box",
+    backgroundColor: "transparent", 
+  };
 
   return (
-    <div>
-      <Box style={styleTypeContainer} id="home">
+    <div id="about">
+      <Box style={styleContainer} id="home">
       <Grid container justifyContent="center">
         <Avatar
           src={avatar}
@@ -57,7 +63,7 @@ function About() {
       <ThemeProvider theme={theme}>
       <FadeIn delay={800} transitionDuration={600}>
       
-      <Typography variant="h4" style={styleTitle}>
+      <Typography variant="h3" style={styleTitle}>
         Francisco Alvarado
         
       </Typography>
@@ -66,9 +72,11 @@ function About() {
       and a commitment to delivering quality results. Let's do something truly remarkable together!
         </Typography>
         <Typography variant="h5" style={styleSubtitle}>
-        Or we can explore intriguing topics like space exploration and the mysteries of the universe
+        Or we can talk about the gym or play some chess!
       </Typography>
-      <Button variant="contained" href="https://docs.google.com/document/d/1v2AyIx2MDkd1SizPfZBzZb_Typ-jVi1d5KiEe4Znzjg/edit?usp=sharing">My Resume</Button>
+      <Button variant="contained" href="https://docs.google.com/document/d/1v2AyIx2MDkd1SizPfZBzZb_Typ-jVi1d5KiEe4Znzjg/edit?usp=sharing">
+        My Resume
+      </Button>
       
       </FadeIn>
       </ThemeProvider>
