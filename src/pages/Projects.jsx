@@ -15,6 +15,7 @@ import Movies from "../assets/WeLoveMovies.PNG"
 import Restaurant from "../assets/Restaurant-reservation.PNG"
 import Recipe from "../assets/Recipe-App.PNG"
 import GrubDash from "../assets/GrubDash.PNG"
+import Anoplex from '../assets/Anoplex.PNG'
 
 const theme = createTheme({
   typography: {
@@ -44,6 +45,42 @@ function Projects() {
       </ThemeProvider>
       <Grid container justifyContent="center">
 
+      <Grid item xs={12} sm={6} md={4}>
+          <Card style={styleCardContainer}>
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                alt="Anoplex"
+                height="190"
+                image={Anoplex}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5">
+                  Anoplex Software
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                This project involved converting a locally installed Windows program into a web-based module for Anoplex's website, 
+                utilizing Laravel, React, and Inertia. The goal was to enable cross-platform compatibility and expand the product's 
+                accessibility to Mac and Linux users. This project was pivotal in enhancing user experience and contributing to the 
+                company's growth by broadening the customer base. Utilized Laravel, React, and Inertia to develop and maintain web 
+                applications.
+                </Typography>
+                <br />
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                href="https://www.anoplex.com/"
+                target="blank"
+              >
+                Live Link
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
+      
       <Grid item xs={12} sm={6} md={4}>
           <Card style={styleCardContainer}>
             <CardActionArea>
