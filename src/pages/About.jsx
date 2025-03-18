@@ -74,7 +74,7 @@ function About() {
         <Typography variant="h5" style={styleSubtitle}>
         Or we can talk about the gym or play some chess!
       </Typography>
-      <Button variant="contained" href="https://docs.google.com/document/d/1v2AyIx2MDkd1SizPfZBzZb_Typ-jVi1d5KiEe4Znzjg/edit?usp=sharing">
+      <Button variant="contained" href="https://docs.google.com/document/d/1shvK56pasHC8YoU7msknKxzQuYvwit3JJQkT3dzO4-o/edit?usp=sharing">
         My Resume
       </Button>
       
